@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  background: #fff6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+/* Hello Kitty Image */
+.kitty-img {
+  width: 850px; /* Adjust to fit your image */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Loading Bar as Mouth */
+.mouth-loading {
+  width: 0;
+  height: 3px;
+  background: black;
+  margin: -50px auto 0; /* Align under the nose (adjust this!) */
+  position: relative;
+  z-index: 10;
+  transition: width 3s ease-in-out;
+}
+
+/* Hidden Content */
+.content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+.content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Confetti Button */
+#confetti-btn {
+  background: #ff6b9e;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
